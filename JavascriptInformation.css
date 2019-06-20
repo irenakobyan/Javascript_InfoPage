@@ -1,0 +1,126 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color:#F1F1F1;
+}
+
+.header {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.dropdown {
+	display: none;
+}
+
+.header img {
+	width: 50%;
+}
+
+.logo, .button, .menu {
+	text-align: center;
+	margin: 2em;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.5vw;
+	color: white;
+	margin: 10px;
+	padding: 0.5em;
+	background-color: #DAB92D;
+}
+
+.infotables {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.table {
+	max-width: 30em;
+	color: black;
+	text-align: center;
+}
+.table__bg {
+	background-color: white;
+	color: black;
+	border-radius: 30px;
+	box-shadow: 5px 5px 8px 5px black;
+	padding: 10px;
+}
+
+footer { 
+	background-color: black;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+	text-decoration: none;
+	color: #DAB92D;
+	font-size: 5vw;
+}
+
+@media only screen and (max-width:500px) {
+	.header {
+		width: 100%;
+	}
+
+	.menu a {
+		display: none;
+	}
+
+	.dropnlogo {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		max-width: 10%;
+	}
+
+	.logo img {
+		width: 100%;
+	}
+
+	.dropbtn img {
+		width: 20%;
+		margin: 2em;
+	}
+	.dropbtn {
+	  background-color: transparent;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropdown {
+	  width: 100px;
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #f1f1f1
+	 }
+
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+}
